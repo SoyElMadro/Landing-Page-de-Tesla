@@ -6,6 +6,7 @@ import Section from "./Section.astro";
   title="Model Y"
   subtitle="Concertar una prueba de conducción"
   color="black"
+  id="model-y"
 >
   <div slot="footer" class="flex gap-x-6 mx-auto">
     <a
@@ -21,7 +22,31 @@ import Section from "./Section.astro";
     <img
       src="/model-y.avif"
       alt="Model Y"
-      class="object-center h-full w-full object-cover"
+      class="object-center h-full w-full object-cover bg-image"
+      id="bg-image-model-y"
     />
   </div>
 </Section>
+
+<script>
+  function isEdge() {
+    if (
+      navigator.userAgent.indexOf("Edge") > -1 ||
+      navigator.userAgent.indexOf("Edg") > -1
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  var imageElement = document.querySelector(
+    "#bg-image-model-y"
+  ) as HTMLImageElement;
+
+  if (isEdge()) {
+    imageElement.src = "model-y.webp";
+  } else {
+    imageElement.src = "model-y.avif";
+  }
+</script>
