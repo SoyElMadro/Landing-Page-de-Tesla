@@ -7,10 +7,10 @@ import Logo from "../components/Logo.astro";
 	class="py-2.5 px-12 flex items-center fixed top-0 w-full justify-between z-40 text-white"
 >
 	<div class="flex flex-grow basis-0">
-		<Logo />
+		<a href="./"><Logo /></a> 
 	</div>
 
-	<nav>
+	<nav class="hidden xl:block sm:hidden">
 		<ul
 			class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a]:text-current [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
 		>
@@ -27,9 +27,9 @@ import Logo from "../components/Logo.astro";
 		<ul
 			class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-300 [&>li>a]:text-current [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
 		>
-			<li><a href="#">Soporte</a></li>
-			<li><a href="#">Tienda</a></li>
-			<li><a href="#">Cuenta</a></li>
+			<li class="hidden xl:block sm:hidden"><a href="#">Soporte</a></li>
+			<li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+			<li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
 			<li><a href="#">Menú</a></li>
 		</ul>
 	</nav>
