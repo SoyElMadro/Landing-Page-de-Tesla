@@ -1,1 +1,1 @@
-![Screenshot 2023-07-03 at 00-06-38 Autitos eléctricos energía limpia y solar Tesla SoyElMadro](https://github.com/SoyElMadro/Landing-Page-de-Tesla/assets/116760802/9cd3f815-2e74-4f9f-b7a9-784cb9366653)
+![Screenshot 2023-07-03 at 00-07-39 Autitos eléctricos energía limpia y solar Tesla SoyElMadro](https://github.com/SoyElMadro/Landing-Page-de-Tesla/assets/116760802/d8f1203a-478d-4174-bcb7-d01d894eec82)
