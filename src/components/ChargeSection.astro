@@ -1,32 +1,27 @@
-<section
-  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
-  data-header-color="black"
+---
+import Section from "./Section.astro";
+---
+
+<Section
+  title="Model Y"
+  subtitle="Concertar una prueba de conducción"
+  color="black"
 >
-  <div class="z-30 relative h-full flex flex-col">
-    <header>
-      <h2 class="text-black text-[40px] font-medium pt-32">Model Y</h2>
-      <p class="text-black text-sm underline">Concertar una prueba de conducción</p>
-    </header>
-
-    <footer class="flex flex-col flex-grow justify-end pb-[60px]">
-      <div class="flex gap-x-4 mx-auto">
-        <a
-          class="bg-[#171a20] rounded text-sm text-white px-[60px] py-[10px] inline-block hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-colors"
-          href="/">Explorar inventario</a
-        >
-        <a
-          class="border-[3px] border-white bg-white rounded text-sm text-[#171a20] px-[51px] py-[7px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
-          href="/">Pedido personalizado</a
-        >
-      </div>
-    </footer>
+  <div slot="footer" class="flex gap-x-6 mx-auto">
+    <a
+      class="bg-[#171a20] rounded text-sm text-white px-[60px] py-[10px] inline-block hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-colors"
+      href="/">Explorar inventario</a
+    >
+    <a
+      class="border-[3px] border-white bg-white rounded text-sm text-[#171a20] px-[51px] py-[7px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
+      href="/">Pedido personalizado</a
+    >
   </div>
-
-  <div class="absolute top-[-25%] bottom-[-25%] z-10">
+  <div slot="background" class="absolute top-[-25%] bottom-[-25%] z-10">
     <img
       src="/model-y.avif"
       alt="Model Y"
       class="object-center h-full w-full object-cover"
     />
   </div>
-</section>
+</Section>
