@@ -10,19 +10,19 @@ import Section from "./Section.astro";
 >
   <div slot="footer" class="flex gap-x-6 mx-auto">
     <a
-      class="bg-[#171a20] rounded text-sm text-white px-[60px] py-[10px] inline-block hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-colors"
-      href="/">Explorar inventario</a
+      class="bg-white rounded text-md font-semibold text-black px-[64px] py-[10px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors opacity-70"
+      href="/">Entrega más rápida</a
     >
     <a
-      class="border-[3px] border-white bg-white rounded text-sm text-[#171a20] px-[51px] py-[7px] inline-block hover:bg-black hover:text-white hover:border-black transition-colors"
+      class="border-[3px] border-gray-900 bg-gray-900 rounded text-md font-semibold text-white px-[60px] py-[7px] inline-block hover:bg-black hover:border-black hover:text-white transition-colors opacity-70"
       href="/">Pedido personalizado</a
     >
   </div>
   <div slot="background" class="absolute top-[-25%] bottom-[-25%] z-10">
     <img
-      src="/model-y.avif"
+      src="/images/model-y.avif"
       alt="Model Y"
-      class="object-center h-full w-full object-cover bg-image"
+      class="h-full w-full object-cover aspect-video"
       id="bg-image-model-y"
     />
   </div>
@@ -33,20 +33,15 @@ import Section from "./Section.astro";
     if (
       navigator.userAgent.indexOf("Edge") > -1 ||
       navigator.userAgent.indexOf("Edg") > -1
-    ) {
+    )
       return true;
-    } else {
-      return false;
-    }
+    else return false;
   }
 
   let imageElement = document.querySelector(
     "#bg-image-model-y"
   ) as HTMLImageElement;
 
-  if (isEdge()) {
-    imageElement.src = "model-y.webp";
-  } else {
-    imageElement.src = "model-y.avif";
-  }
+  if (isEdge()) imageElement.src = "/images/model-y.webp";
+  else imageElement.src = "/images/model-y.avif";
 </script>

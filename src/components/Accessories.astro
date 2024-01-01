@@ -2,23 +2,28 @@
 import Section from "./Section.astro";
 ---
 
-<Section title="Accesorios" subtitle="" color="black" id="accesorios" showFooterContent="true"> 
+<Section
+  title="Accesorios"
+  subtitle=""
+  color="black"
+  id="accesorios"
+  showFooterContent="true"
+>
   <div slot="footer" class="gap-x-6 flex mx-auto box-content">
     <a
-      class="bg-[#171a20] rounded text-sm text-white px-20 py-[10px] mb-5 inline-block hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-colors"
+      class="bg-[#171a20] rounded text-md font-semibold text-white px-20 py-[10px] mb-5 inline-block hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-colors"
       href="#"
     >
-      Comprar ahora</a
-    >
-
+      Comprar ahora
+    </a>
   </div>
 
   <div slot="background" class="absolute top-0 bottom-0 z-10">
     <img
+      class="w-full object-cover aspect-video"
+      src="/images/accessories.avif"
       alt="Accesorios"
-      class="h-full w-full object-cover object-center"
-      src="accessories.avif"
-      id="bg-image-accessories"
+      id="bg-image-accesories"
     />
   </div>
 </Section>
@@ -28,20 +33,15 @@ import Section from "./Section.astro";
     if (
       navigator.userAgent.indexOf("Edge") > -1 ||
       navigator.userAgent.indexOf("Edg") > -1
-    ) {
+    )
       return true;
-    } else {
-      return false;
-    }
+    else return false;
   }
 
   let imageElement = document.querySelector(
-    "#bg-image-accessories"
+    "#bg-image-accesories"
   ) as HTMLImageElement;
 
-  if (isEdge()) {
-    imageElement.src = "accessories.webp";
-  } else {
-    imageElement.src = "accessories.avif";
-  }
+  if (isEdge()) imageElement.src = "/images/accessories.webp";
+  else imageElement.src = "/images/accessories.avif";
 </script>

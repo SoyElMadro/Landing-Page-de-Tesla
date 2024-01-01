@@ -1,7 +1,7 @@
 ---
 const { color, title, subtitle, id, showFooterContent } = Astro.props;
 const textColor = `text-${color}`;
-import FooterMenu from './FooterMenu.astro';
+import FooterMenu from "./FooterMenu.astro";
 ---
 
 <section
@@ -11,11 +11,11 @@ import FooterMenu from './FooterMenu.astro';
 >
   <div class="z-30 relative h-full flex flex-col">
     <header>
-      <h2 class={`${textColor} text-[40px] font-medium pt-32`}>
+      <h2 class={`${textColor} text-[44px] font-medium pt-32 mb-1`}>
         {title}
       </h2>
-      <p class={`${textColor} text-sm`}>
-        <a class="hover:underline" href="/">{subtitle}</a>  
+      <p class={`${textColor} text-md`}>
+        <a class={`border-b border-${color} p-0 hover:border-b-2`} href="/">{subtitle}</a>
       </p>
     </header>
 

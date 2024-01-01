@@ -1,23 +1,18 @@
 ---
-import HeroSection from "../components/HeroSection.astro";
-import LandingHeader from "../components/LandingHeader.astro";
-import ModelS from "../components/ModelS.astro";
-import Model3 from "../components/Model3.astro";
-import ModelX from "../components/ModelX.astro";
-import ModelY from "../components/ModelY.astro";
-import PowerWall from "../components/PowerWall.astro";
-import Accessories from "../components/Accessories.astro";
-import Layout from "../layouts/Layout.astro";
+import Layout from '../layouts/Layout.astro';
+import LandingHeader from '../components/LandingHeader.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ModelY from '../components/ModelY.astro';
+import Model3 from '../components/Model3.astro';
+import ModelS from '../components/ModelS.astro';
+import ModelX from '../components/ModelX.astro';
+import PowerWall from '../components/PowerWall.astro';
+import Accessories from '../components/Accessories.astro';
 ---
 
-<Layout title="Autitos eléctricos, energía limpia y solar | Tesla SoyElMadro">
+<Layout title="Coches eléctricos, energía solar y limpia | Tesla España">
 	<LandingHeader />
-	<main
-		class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
-	>
-		<div class="snap-center">
-			<HeroSection />
-		</div>
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
 		<div class="snap-center">
 			<ModelY />
 		</div>
@@ -31,10 +26,13 @@ import Layout from "../layouts/Layout.astro";
 			<ModelX />
 		</div>
 		<div class="snap-center">
-      <PowerWall />
-    </div>
-    <div class="snap-center">
-      <Accessories />
-    </div>
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<PowerWall />
+		</div>
+		<div class="snap-center">
+			<Accessories />
+		</div>
 	</main>
 </Layout>
